@@ -1,0 +1,276 @@
+/* Default CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+
+
+}
+img{
+    width: 100%;
+    
+}
+.fixed-width{
+    width: 1200px;
+    margin: auto;
+}
+
+/* Header Css */
+
+.header{
+    background-color: rgb(4, 166, 230);
+}
+.header-left img{
+    height: auto;
+    width: 180px;
+    margin: 15px 20px;
+}
+.header-left{
+    float: left;
+    width: 30%;
+}
+.header-right{
+    float: right;
+    width: 70%;
+}
+.header-right ul{
+    text-align: right;
+}
+.header-right ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: -4px;
+    
+}
+.header-right ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: poppins;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 28px;
+    line-height: 91px;
+    border-right: 1px solid white;
+}
+/* .header-right ul li a:hover{
+    background-color: rgb(0, 183, 255);
+    transition: .5s;
+} */
+/* transform */
+.header-right ul li a{
+    position: relative;
+    z-index: 2;
+}
+.header-right ul li a::after{
+    content: "";
+    position: absolute;
+   bottom: 0;
+    right: 0;
+    width: 100%;
+    height:0;
+    background-color: tomato;
+    z-index: -1;
+}
+.header-right ul li a:hover::after{
+    height: 100%;
+    transition: .3s;
+}
+
+/* Banner css */
+.banner{
+    background-image: url(./images/banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0px;
+}
+.banner-caption{
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.banner-caption h2{
+    color: white;
+    font-family: poppins;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+    background-color:rgba(106, 107, 107, 0.664);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 2%;
+
+}
+.banner-caption h1{
+    color: white;
+    font-family: poppins;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color:rgb(4, 166, 230);
+    padding: 10px 20px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+
+/* Service section css */
+
+.service{
+    margin-top:20px ;
+}
+.service-item{
+    float: left;
+    width: 31.3%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    border-radius: 5px;
+    margin: 20px 10px;
+    padding: 70px 20px;
+
+
+}
+.service-item:hover{
+    box-shadow:3px 3px 10px rgba(0, 0, 0, 0.295);
+    transition: .4s;
+
+}
+.service-item span{
+    display: block;
+    height: 60px;
+    width:60px;
+    background-color:rgb(4, 166, 230);
+    font-size: 30px;
+    line-height: 60px;
+    border-radius: 20px 0 20px 0;
+    margin:auto;
+    color:white;
+    
+
+}
+.service-item h3{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: poppins;
+    color:orangered;
+}
+.service-item p{
+    font-family: poppins;
+}
+/* About Us */
+.about{
+    text-align: center;
+    margin-top:50px;
+}
+
+.about h2{
+    font-size: 35px;
+    font-family: poppins;
+    color: orangered;
+
+}
+.about p{
+    max-width: 700px;
+    margin: auto;
+    font-family: poppins;
+    margin-top: 8px;
+}
+
+/* Blog section container */
+
+.blog-container{
+    margin-top:30px ;
+}
+.blog-left-content{
+    float: left;
+    width: 70%;
+}
+.blog-left-notification{
+    float: right;
+    width: 25%;
+}
+.blog-item{
+    margin-bottom: 35px;
+}
+.blog-item img{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-right: 15px;
+    
+}
+.blog-item p{
+    font-family: poppins;
+}
+
+/* Blog section notification*/
+.blog-left-notification h2{
+    font-family: poppins;
+    color: red;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.blog-left-notification ul{
+    list-style-type: none;
+}
+.blog-left-notification ul li{
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    margin-bottom: 9px;
+}
+
+/* Footer  */
+.footer{
+    background: rgb(17, 16, 54);
+    padding: 15px 0;
+}
+/* Footer left */
+.footer-left{
+    float: left;
+    width: 40%;
+}
+.footer-left p{
+    color: white;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 400;
+    line-height: 30px;
+}
+/* Footer-left */
+.footer-right{
+    float: right;
+    width: 60%;
+    
+}
+.social-media{
+    list-style-type: none;
+    text-align:right;
+}
+.social-media li{
+    display: inline-block;
+    
+    
+}
+
+.social-media li a{
+    display: inline-block;
+    color: white;
+    margin-left: 25px;
+    font-size: 15px;
+    line-height: 35px;
+}
+.social-media li a:hover{
+
+}
